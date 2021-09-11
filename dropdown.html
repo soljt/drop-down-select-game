@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WCLN - Drop Down Select</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.css">
+	<script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<script type="text/javascript" src="dropdown.js"></script>
+</head>
+<body onload="init();">
+	<table>
+        <tr>
+            <th class="first">Statement</th>
+            <th>Reason</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td class="first">&angle;1 = 60&deg;</td>
+            <td class="second">
+                <select id="select1" class="reasons">
+                    <option>Corresponing angles</option>
+                    <option value="correct">Alternate interior angles</option>
+                    <option>Vertically opposite angles</option>
+                    <option>Alternate exterior angles</option>
+                </select>
+            </td>
+            <td>
+                <button id="checkbtn1" onclick="check('1');">Check</button>
+                <p id = correct1>Nice!</p>  
+            </td>
+        </tr>
+        <tr>
+            <td class="first">&angle;2 = 30&deg;</td>
+            <td class="second">
+                <select id="select2" class="reasons">
+                    <option value="correct">Vertically opposite angles</option>
+                    <option>Corresponding angles</option>
+                    <option>Supplementary angles</option>
+                    <option>Alternate interior angles</option>
+                </select>
+            </td>
+            <td>
+                <button id="checkbtn2" onclick="check('2');">Check</button>
+                <p id = correct2>Nice!</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="first">&angle;3 = 90&deg;</td>
+            <td class="second">
+                <select id="select3" class="reasons">
+                    <option>Alternate interior angles</option>
+                    <option>Supplementary angles</option>
+                    <option>Alternate exterior angles</option>
+                    <option value="correct">Interior angles of a triangle add to 180&deg; (180&deg; - 30&deg; - 60&deg; = 90&deg;)</option>
+                </select>
+            </td>
+            <td>
+                <button id="checkbtn3" onclick="check('3');">Check</button>
+                <p id = correct3>Nice!</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="first">&angle;4 = 150&deg;</td>
+            <td class="second">
+                <select id="select4" class="reasons">
+                    <option>Interior angles of a triangle add to 180&deg; (180&deg; - 30&deg; = 150&deg;)</option>
+                    <option>Alternate exterior angles</option>
+                    <option>Alternate interior angles</option>
+                    <option value="correct">Angles on a line (180&deg; - 30&deg; = 150&deg;)</option>
+                </select>
+            </td>
+            <td>
+                <button id="checkbtn4" onclick="check('4');">Check</button>
+                <p id = correct4>Nice!</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

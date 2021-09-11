@@ -1,0 +1,34 @@
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+tr:first-child th{
+    border-bottom: 1px solid black;
+}
+
+.first{
+    border-right: 1px solid black;
+    width: 90px;
+}
+
+.second{
+    width: 450px;
+}
+
+th, td {
+    text-align: center;
+    padding: 2px;
+}
+
+select{
+    width: 440px;
+}
+
+button{
+    font-weight: 700;
+}
+
+p {
+    display: none;
+}
