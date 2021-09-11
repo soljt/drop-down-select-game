@@ -19,6 +19,8 @@ tr:first-child th{
 th, td {
     text-align: center;
     padding: 2px;
+    width: 75px;
+    height: 30px;
 }
 
 select{
@@ -29,6 +31,7 @@ button{
     font-weight: 700;
 }
 
-p {
+div {
     display: none;
+    color: green
 }
