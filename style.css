@@ -33,5 +33,12 @@ button{
 
 div {
     display: none;
+}
+
+.correctDiv {
     color: green
+}
+
+.wrongDiv {
+    color: red
 }

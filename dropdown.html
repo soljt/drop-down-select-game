@@ -20,7 +20,7 @@
         <tr>
             <td class="first">&angle;1 = 60&deg;</td>
             <td class="second">
-                <select id="select1" class="reasons" onchange="changedSelect('1')">
+                <select id="select1" class="reasons" onchange="resetRow('1')">
                     <option>Select reason...</option>
                     <option>Corresponing angles</option>
                     <option value="correct">Alternate interior angles</option>
@@ -30,13 +30,14 @@
             </td>
             <td>
                 <button id="checkbtn1" onclick="check('1');">Check</button>
-                <div id = correct1>Nice!</div>  
+                <div class = correctDiv id = correct1>Nice!</div>
+                <div class = wrongDiv id = wrong1>Try again!</div>   
             </td>
         </tr>
         <tr>
             <td class="first">&angle;2 = 30&deg;</td>
             <td class="second">
-                <select id="select2" class="reasons" onchange="changedSelect('2')">
+                <select id="select2" class="reasons" onchange="resetRow('2')">
                     <option>Select reason...</option>
                     <option value="correct">Vertically opposite angles</option>
                     <option>Corresponding angles</option>
@@ -46,13 +47,14 @@
             </td>
             <td>
                 <button id="checkbtn2" onclick="check('2');">Check</button>
-                <div id = correct2>Nice!</div>
+                <div class = correctDiv id = correct2>Nice!</div>
+                <div class = wrongDiv id = wrong2>Try again!</div> 
             </td>
         </tr>
         <tr>
             <td class="first">&angle;3 = 90&deg;</td>
             <td class="second">
-                <select id="select3" class="reasons" onchange="changedSelect('3')">
+                <select id="select3" class="reasons" onchange="resetRow('3')">
                     <option>Select reason...</option>
                     <option>Alternate interior angles</option>
                     <option>Supplementary angles</option>
@@ -62,13 +64,14 @@
             </td>
             <td>
                 <button id="checkbtn3" onclick="check('3');">Check</button>
-                <div id = correct3>Nice!</div>
+                <div class = correctDiv id = correct3>Nice!</div>
+                <div class = wrongDiv id = wrong3>Try again!</div> 
             </td>
         </tr>
         <tr>
             <td class="first">&angle;4 = 150&deg;</td>
             <td class="second">
-                <select id="select4" class="reasons" onchange="changedSelect('4')">
+                <select id="select4" class="reasons" onchange="resetRow('4')">
                     <option>Select reason...</option>
                     <option>Interior angles of a triangle add to 180&deg; (180&deg; - 30&deg; = 150&deg;)</option>
                     <option>Alternate exterior angles</option>
@@ -78,7 +81,8 @@
             </td>
             <td>
                 <button id="checkbtn4" onclick="check('4');">Check</button>
-                <div id = correct4>Nice!</div>
+                <div class = correctDiv id = correct4>Nice!</div>
+                <div class = wrongDiv id = wrong4>Try again!</div> 
             </td>
         </tr>
         <tr>
